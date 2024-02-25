@@ -6,7 +6,7 @@ $ pip install google-generativeai
 
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyBnTrXNNwVwooiapQrq3rENMR70Ymw-mzQ")
+genai.configure(api_key="YOUR_API_KEY")
 
 # Set up the model
 generation_config = {
@@ -40,7 +40,7 @@ model = genai.GenerativeModel(model_name="gemini-1.0-pro",
                               safety_settings=safety_settings)
 
 prompt_parts = [
-  "Co je to Wikipedie",
+  "YOUR_QUESTION",
 ]
 
 response = model.generate_content(prompt_parts)
